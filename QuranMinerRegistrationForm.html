@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<head>
+<title>Quran Ayah Blockchain </title>
+<style>
+
+
+</style>
+<Script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+function myFunction() {
+    var inpObj = document.getElementById("id1");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    }
+}
+
+</Script>
+</head>
+
+
+<body>
+<div>
+<table align="center" cellpadding="0"  width="80%" col="2">
+<tr>
+
+
+   
+    <th width="77%" scope="col" bgcolor='#3399FF'><font size="" color='#FFFFFF'> 
+
+	<h1> <p align="center">Quran Validation Application</h1></font></p>
+
+<a href="QuranUser.html" tabindex="1" title="QuranUser"><input type="button" title="QuranUser" value="QuranUser"></a>
+<a href="QuranMiner.html" tabindex="1" title="QuranMiner"><input type="button" title="QuranMiner" value="QuranMiner"></a>
+<a href="Register.html" tabindex="1" title="Register"><input type="button" title="Register" value="Register"></a>
+
+<a href="login.php" tabindex="2" title="Login" accesskey="2"><input type="button" title="login" value="Login"></a>
+  
+   
+ <marquee bgcolor="black"><font color='white' size="100"><b>Protect the Integrity of the Quran</b></font></marquee></th>
+  </tr>
+
+<tr>
+
+<td>
+
+ <form action="QuranMiner.php" method="post">
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+
+
+
+<div><fieldset><legend>Miner Registration Form</legend><table align='center' width='70%' bgcolor="">
+  
+  <caption><b></b></caption>
+
+<tr><td>Miner Public ID</td><td><input type="text" size="32" name="minerID" /></td></tr>
+
+
+	   <tr><td>Previous Ayah</td><td><input type="text" size="64" name="PreviousAyah" /></td></tr>
+           <tr><td> Current Ayah </td><td><input type="text" size="64" name="currentAyah" /></td></tr>
+	   <tr><td>Name of Surah</td><td><input type="text" size="32" name="surahName" /></td></tr>
+           <tr><td>Number of Ayah in the Surah</td><td><input id="id1" type="number" min="3" max="286" name="surahAyahNum" required/></td></tr>
+           <tr><td>Ayah Number</td><td><input id="id1" type="number" min="3" max="286" name="ayahNum" required/></td></tr>
+	   <tr><td>Quran Ayah Number </td><td><input id="id1" type="number" min="1" max="6236" name="quranAyahNum" required/></td></tr>
+           
+           <tr><td>Block Number</td><td><input id="id1" type="number" min="0" max="7000" name="blockNum" required/></td></tr>
+
+
+ <tr><td></td><td><button onclick="myFunction()">Register for Mining</button></td></tr>
+		
+	 </table></fieldset></div></form>
+
+
+</td>
+</tr>
+
+<tr>
+   
+    <td style="background-color:#000000"><p align='center'> <font color="#FFFFFF">
+	<a href="index.html" tabindex="1" title="Home">Home</a>|
+	 <a href="QuranUser.html" tabindex="2" title="QuranUser" accesskey="2">QuranUser</a>|
+<a href="QuranMiner.html" tabindex="2" title="QuranMiner" accesskey="2">QuranMiner</a>|
+ <a href="login.html" tabindex="2" title="QuranUser" accesskey="2">Login</a>
+	
+	 
+	<br /> Developed by Abubakar Hassan &copy; 2017 all rights reserved</font></p>  </td>
+  </tr>
+
+
+</table>
+
+
+</div>
+</body>
+</html>
